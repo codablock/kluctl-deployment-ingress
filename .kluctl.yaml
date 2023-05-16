@@ -1,7 +1,5 @@
 args:
   - name: replicas
     default: 1
-  - name: nodePortsOffset
-    default: 30000
 
 discriminator: deployment-nginx

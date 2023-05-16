@@ -1,14 +1,6 @@
 controller:
   replicas: {{ args.replicas }}
-  hostNetwork: true
-  #service:
-  #  type: ClusterIP
   updateStrategy:
     rollingUpdate:
       maxUnavailable: 1
     type: RollingUpdate
-  service:
-    type: NodePort
-    nodePorts:
-      http: {{ args.nodePortsOffset + 80 }}
-      https: {{ args.nodePortsOffset + 443 }}
