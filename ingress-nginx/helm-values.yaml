@@ -4,3 +4,6 @@ controller:
     rollingUpdate:
       maxUnavailable: 1
     type: RollingUpdate
+
+  hostPort:
+    enabled: true
