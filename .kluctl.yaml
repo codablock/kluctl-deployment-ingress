@@ -1,0 +1,5 @@
+args:
+  - name: replicas
+    default: 1
+
+discriminator: deployment-nginx

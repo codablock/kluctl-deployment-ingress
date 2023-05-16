@@ -1,0 +1,9 @@
+controller:
+  replicas: {{ args.replicas }}
+  hostNetwork: true
+  #service:
+  #  type: ClusterIP
+  updateStrategy:
+    rollingUpdate:
+      maxUnavailable: 1
+    type: RollingUpdate
