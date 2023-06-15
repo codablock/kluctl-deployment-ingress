@@ -8,8 +8,8 @@ controller:
   hostPort:
     enabled: true
 
-  nodeSelector:
-    node-role.kubernetes.io/control-plane: ""
+  #nodeSelector:
+  #  node-role.kubernetes.io/control-plane: ""
   tolerations:
     - key: "node-role.kubernetes.io/control-plane"
       operator: "Exists"
