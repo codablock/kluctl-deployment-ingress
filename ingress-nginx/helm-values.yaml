@@ -5,8 +5,6 @@ controller:
       maxUnavailable: 1
     type: RollingUpdate
 
-  hostNetwork: true
-
   hostPort:
     enabled: true
 
@@ -15,3 +13,6 @@ controller:
   tolerations:
     - key: "node-role.kubernetes.io/control-plane"
       operator: "Exists"
+
+  admissionWebhooks:
+    enabled: false
