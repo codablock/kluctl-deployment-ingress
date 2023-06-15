@@ -5,6 +5,8 @@ controller:
       maxUnavailable: 1
     type: RollingUpdate
 
+  hostNetwork: true
+
   hostPort:
     enabled: true
 
